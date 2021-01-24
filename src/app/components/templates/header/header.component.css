@@ -1,0 +1,57 @@
+.home-button {
+    margin-left: 90px;
+}
+
+@media (max-width:992px) {
+    .navbar-toggler {
+        border: none !important;
+    }
+
+    .sidemenu-toggler {
+        outline: none !important;
+        border: none;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .line {
+        position: absolute;
+        width: 30px !important;
+        height: 3px !important;
+        background-color: white !important;
+        border-radius: 4px;
+        transition: all cubic-bezier(0.75, 0.82, 0.165, 1) 0.25s;
+    }
+
+    .top {
+        top: 4px;
+    }
+
+    .top.close {
+        transform: rotate(45deg);
+        background-color: white !important;
+        top: 10px;
+    }
+
+    .middle {
+        top: 12px;
+    }
+
+    .bottom {
+        top: 20px;
+    }
+
+    .bottom.close, .middle.close {
+        background-color: white !important;
+        transform: rotate(-45deg);
+        top: 10px;
+    }
+
+    .sideMenu {
+        transform: translateX(-200px);
+    }
+
+    .active {
+        transform: translateX(0px);
+    }
+}

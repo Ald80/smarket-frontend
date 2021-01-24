@@ -1,0 +1,9 @@
+.home {
+    margin-left: 240px;
+    margin-top: 120px;
+    z-index: auto;
+}
+
+.home > i {
+    margin: 20px;
+}

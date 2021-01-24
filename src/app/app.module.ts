@@ -3,17 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavbarComponent } from './components/templates/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HeaderComponent } from './components/header/header.component';
-import { UsuarioReadComponent } from './components/usuario-read/usuario-read.component';
+import { HeaderComponent } from './components/templates/header/header.component';
+import { UsuarioReadComponent } from './components/usuario/usuario-read/usuario-read.component';
+import { HomeComponent } from './components/home/home.component';
+import { UsuarioCrudComponent } from './components/usuario/usuario-crud/usuario-crud.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HeaderComponent,
-    UsuarioReadComponent
+    UsuarioReadComponent,
+    HomeComponent,
+    UsuarioCrudComponent
   ],
   imports: [
     BrowserModule,

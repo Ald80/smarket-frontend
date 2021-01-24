@@ -1,0 +1,46 @@
+.wrapper {
+    box-sizing: border-box;
+}
+
+.sideMenu {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    margin: 56px auto auto;
+    transition: all ease 0.25s;
+    
+    z-index: 9999;
+}
+
+.icon {
+    margin-left: 10px;
+    color: #b6b1b1;
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.sidebar a {
+    color: rgb(182, 177, 177);
+}
+
+.sidebar .nav-item:hover {
+    color: white !important;
+    background-color: rgb(46, 45, 45);
+} 
+
+.translate { 
+    transform: translateX(200px) !;
+}
+
+@media(max-width:992px) {
+    .sidemenu-toggler {
+        outline: none !important;
+        border: none;
+        position: relative;
+        cursor: pointer;
+    }
+}
