@@ -1,0 +1,19 @@
+<div class="form-class card"> 
+    <div class="card-body">
+        <div class="card-title">
+            <h3>Novo Usuário</h3>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" 
+                    aria-describedby="nomeUsuario" [(ngModel)]="usuario.nome" name="nome"> 
+                <div id="nomeUsuario" class="form-text">
+                    <i>Insira o nome do usuário</i>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" (click)="createUsuario()">Salvar</button>
+            <button type="button" class="btn btn-secondary" (click)="cancel()">Cancelar</button>
+        </form>
+    </div>
+</div>
