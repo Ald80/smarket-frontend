@@ -2,29 +2,26 @@
     <table class="table table-bordered table-hover">
         <thead class="thead-light">
             <tr class="thead-tr">
+                <th scope="col">Estado</th>
                 <th scope="col">Id</th>
-                <th scope="col">Nome</th>
+                <th scope="col">Descricão</th>
                 <th scope="col">Ações</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let usuario of usuarios">
-                <td scope="row">{{ usuario.id }}</td>
-                <td scope="row">{{ usuario.nome }}</td>
+            <tr *ngFor="let tarefa of tarefas">
+                <td scope="row">{{ tarefa.estado }}</td>
+                <td scope="row">{{ tarefa.id }}</td>
+                <td scope="row">{{ tarefa.descricao }}</td>
                 <td scope="row">
-                    <a routerLink="/usuario/update/{{ usuario.id }}" class="edit">
+                    <a routerLink="/tarefa/update/{{ tarefa.id }}" class="edit">
                         <i class="material-icons">
                             edit
                         </i>
                     </a>
-                    <a routerLink="/usuario/delete/{{ usuario.id }}" class="delete">
+                    <a routerLink="/tarefa/delete/{{ tarefa.id }}" class="delete">
                         <i class="material-icons">
                             delete
-                        </i>
-                    </a>
-                    <a routerLink="/tarefa/{{ usuario.id }}" class="view_list">
-                        <i class="material-icons">
-                            view_list
                         </i>
                     </a>
                 </td>

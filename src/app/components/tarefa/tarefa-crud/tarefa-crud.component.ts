@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-tarefa-crud',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TarefaCrudComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router,
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
 
+  navigateToTarefaCreate(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.router.navigate([`tarefa/create/${id}`]);
+  }
 }
