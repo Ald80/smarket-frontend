@@ -28,7 +28,6 @@ export class TarefaUpdateComponent implements OnInit {
     const fk = +this.route.snapshot.paramMap.get('id');
     this.tarefaService.readById(fk).subscribe(tarefa => {
       this.tarefa = tarefa;
-      console.log(tarefa);
       this.getUsuarios();
     });
   }

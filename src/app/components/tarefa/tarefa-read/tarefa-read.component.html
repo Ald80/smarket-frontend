@@ -1,31 +1,51 @@
-<div class="container table-responsive-sm py-5">
-    <table class="table table-bordered table-hover">
-        <thead class="thead-light">
-            <tr class="thead-tr">
-                <th scope="col">Estado</th>
-                <th scope="col">Id</th>
-                <th scope="col">Descricão</th>
-                <th scope="col">Ações</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let tarefa of tarefas">
-                <td scope="row">{{ tarefa.estado }}</td>
-                <td scope="row">{{ tarefa.id }}</td>
-                <td scope="row">{{ tarefa.descricao }}</td>
-                <td scope="row">
-                    <a routerLink="/tarefa/update/{{ tarefa.id }}" class="edit">
-                        <i class="material-icons">
-                            edit
-                        </i>
-                    </a>
-                    <a routerLink="/tarefa/delete/{{ tarefa.id }}" class="delete">
-                        <i class="material-icons">
-                            delete
-                        </i>
-                    </a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+<div *ngIf="tarefas.length == 0">
+    <h2>Nenhuma Tarefa Cadastrada</h2>
 </div>
+
+<div *ngIf="tarefas.length > 0">
+    <div class="container table-responsive-sm py-5">
+        <table class="table table-bordered table-hover">
+            <thead class="thead-light">
+                <tr class="thead-tr">
+                    <th scope="col">Estado</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Descricão</th>
+                    <th scope="col">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let tarefa of tarefas">
+                    <td scope="row">
+                        <div *ngIf="!tarefa.estado">
+                            <i class="material-icons align-top">
+                                check_box_outline_blank
+                            </i>
+                            Pendente
+                        </div>
+                        <div *ngIf="tarefa.estado">
+                            <i class="material-icons align-top">
+                                check_box
+                            </i>
+                            Feito
+                        </div>
+                    </td>
+                    <td scope="row">{{ tarefa.id }}</td>
+                    <td scope="row">{{ tarefa.descricao }}</td>
+                    <td scope="row">
+                        <a routerLink="/tarefa/update/{{ tarefa.id }}" class="edit">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
+                        <a routerLink="/tarefa/delete/{{ tarefa.id }}" class="delete">
+                            <i class="material-icons">
+                                delete
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
