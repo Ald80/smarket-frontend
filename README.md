@@ -1,2 +1,4 @@
-# Frontend
 # smarket-frontend
+
+requerimentos:
+  [Angular]()
