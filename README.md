@@ -1,4 +1,4 @@
-# smarket-frontend
+# Gerenciador de Tarefas - FrontEnd
 
 ## Requerimentos:
 * [Angular](https://angular.io/)
