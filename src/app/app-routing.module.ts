@@ -6,7 +6,6 @@ import { UsuarioDeleteComponent } from './components/usuario/usuario-delete/usua
 import { UsuarioUpdateComponent } from './components/usuario/usuario-update/usuario-update.component';
 import { TarefaCrudComponent } from './components/tarefa/tarefa-crud/tarefa-crud.component';
 import { TarefaCreateComponent } from './components/tarefa/tarefa-create/tarefa-create.component';
-import { TarefaReadComponent } from './components/tarefa/tarefa-read/tarefa-read.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';

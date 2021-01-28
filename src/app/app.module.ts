@@ -36,7 +36,7 @@ import { TarefaUpdateComponent } from './components/tarefa/tarefa-update/tarefa-
     TarefaReadComponent,
     TarefaCreateComponent,
     TarefaDeleteComponent,
-    TarefaUpdateComponent
+    TarefaUpdateComponent,
   ],
   imports: [
     BrowserModule,

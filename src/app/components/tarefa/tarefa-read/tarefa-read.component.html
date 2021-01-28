@@ -33,12 +33,12 @@
                     <td scope="row">{{ tarefa.descricao }}</td>
                     <td scope="row">
                         <a routerLink="/tarefa/update/{{ tarefa.id }}" class="edit">
-                            <i class="material-icons">
+                            <i class="material-icons" data-toggle="tooltip" title="Alterar Tarefa">
                                 edit
                             </i>
                         </a>
                         <a routerLink="/tarefa/delete/{{ tarefa.id }}" class="delete">
-                            <i class="material-icons">
+                            <i class="material-icons" data-toggle="tooltip" title="Excluir Tarefa">
                                 delete
                             </i>
                         </a>
