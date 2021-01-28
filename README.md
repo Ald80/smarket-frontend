@@ -8,7 +8,7 @@
 
 Faça o download do projeto através do Git Clone 
 
-Em seguida va até a pasta raiz do projeto baixado e execute `npm install` para instalar as dependência do projeto.
+Em seguida va até a pasta raiz do projeto baixado e execute `npm install` para instalar as dependências do projeto.
 
 Para executar o projeto digite o comando `ng serve` 
 
